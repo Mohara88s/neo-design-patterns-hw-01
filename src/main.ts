@@ -11,10 +11,10 @@ import { Reader } from "./models/Reader";
 const author = new Author("John Doe");
 const book = new Book("The Great Book", 2020, author);
 const ebook = new EBook(
-  "Digital Book",
-  2021,
-  author,
-  "https://example.com/ebook"
+	"Digital Book",
+	2021,
+	author,
+	"https://example.com/ebook",
 );
 
 // Створення копій
@@ -57,4 +57,4 @@ console.log(ebook.getDescription());
 
 // Спроба створити AbstractBook
 // Повинно викликати помилку компіляції
-// const abstractBook = new AbstractBook('Test', 2022);
+// const abstractBook = new AbstractBook("Test", 2022);
